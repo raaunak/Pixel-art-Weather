@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+
+        <!-- HEADER -->
+        <div class="weather-heading">
+            <h1>Weather</h1>
+            <div class="search">
+                <div class="search-field">
+                    <input class="search-input" type="text" placeholder="Search city..." autocomplete="off" />
+                    <div class="search-suggestions" hidden></div>
+                </div>
+                <button class="search-btn" type="button" aria-label="Search">
+                    <img src="images/weather/search.png" alt="Search">
+                </button>
+            </div>
+        </div>
+
+        <!-- INNER CARD -->
+        <div class="inner-card">
+
+            <!-- Temp + Icon row -->
+            <div class="weather-main">
+                <h1 class="temperature">--°C</h1>
+                <img src="images/weather/Sunny.gif" class="weather-icon" alt="Weather">
+            </div>
+
+            <!-- City -->
+            <h2 class="city">—</h2>
+
+            <!-- Humidity + Wind -->
+            <div class="details">
+                <div class="col">
+                    <img src="images/weather/Humidity.png" alt="Humidity">
+                    <p class="humidity">--%</p>
+                </div>
+                <div class="col">
+                    <img src="images/weather/Wind.png" alt="Wind Speed">
+                    <p class="wind-speed">-- km/h</p>
+                </div>
+            </div>
+
+            <!-- Speech bubble -->
+            <div class="speech-bubble">Loading weather…</div>
+
+        </div>
+
+        <!-- PRO TIP -->
+        <p class="pro-tip">Pro tip: Look Outside</p>
+
+        <!-- FORECAST SECTION -->
+        <div class="forecast-section">
+            <div class="forecast-slider">
+
+                <div class="forecast-item current-time">
+                    <span class="f-time">Now</span>
+                    <img src="images/weather/Sunny.gif" alt="Now" class="f-icon">
+                    <span class="f-temp">--°</span>
+                </div>
+
+                <div class="forecast-item">
+                    <span class="f-time">--</span>
+                    <img src="images/weather/Cloudy.gif" alt="" class="f-icon">
+                    <span class="f-temp">--°</span>
+                </div>
+
+                <div class="forecast-item">
+                    <span class="f-time">--</span>
+                    <img src="images/weather/Cloudy.gif" alt="" class="f-icon">
+                    <span class="f-temp">--°</span>
+                </div>
+
+                <div class="forecast-item">
+                    <span class="f-time">--</span>
+                    <img src="images/weather/Partly-Cloudy.gif" alt="" class="f-icon">
+                    <span class="f-temp">--°</span>
+                </div>
+
+                <div class="forecast-item">
+                    <span class="f-time">--</span>
+                    <img src="images/weather/Partly-Cloudy.gif" alt="" class="f-icon">
+                    <span class="f-temp">--°</span>
+                </div>
+
+                <div class="forecast-item">
+                    <span class="f-time">--</span>
+                    <img src="images/weather/Partly-Cloudy.gif" alt="" class="f-icon">
+                    <span class="f-temp">--°</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
